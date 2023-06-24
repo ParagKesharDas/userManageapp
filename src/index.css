@@ -1,0 +1,154 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.Header {
+  background-color: aqua;
+  font-size: 50px;
+  font-weight: 500;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Home,.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f2f2;
+ 
+}
+.Home p,.about p {
+  font-size: 1.3rem
+}
+.Footer {
+  background-color: aqua;
+  height: 5vh;
+}
+
+.Nav {
+  width: 100%;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+
+.Nav ul {
+  color: #fff;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.Nav li {
+  padding: 1rem;
+}
+
+.Nav li:hover, 
+.Nav li:focus {
+  padding: 1rem;
+}
+
+.Nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.Nav li:hover, 
+.Nav li:focus, 
+.Nav li:hover a, 
+.Nav li:focus a  {
+  background-color: #eee;
+  color: #333;
+}
+
+.Nav li:hover a, 
+.Nav li:focus a {
+  cursor: pointer;
+}
+
+
+.Main{
+  background-color: rgb(188, 234, 234);
+  height: 80vh;
+}
+/* .userList {
+  background-color: aliceblue;
+  border: 3px sloid black;
+  margin-bottom:10px ;
+} */
+.userList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  /* height: 100vh; */
+}
+.userItem {
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  min-width:65%;
+  /* border: #3e3e3e sloid black; */
+  
+  
+}
+button {
+  margin-right: 10px;
+  padding: 5px;
+  font-size: 1rem;
+  border: none;
+}
+.deletebtn {
+  background-color: rgb(222, 93, 93);
+}
+.editbtn {
+  background-color: aquamarine;
+}
+.addbtn {
+  
+}
+button[type="submit"] {
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  align-self: center; /* Center the button within the form */
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+}
+.Footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
